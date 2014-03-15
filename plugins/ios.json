@@ -1,0 +1,41 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "framework": {
+            "AudioToolbox.framework": {
+                "false": 1
+            },
+            "AVFoundation.framework": {
+                "false": 1
+            },
+            "CFNetwork.framework": {
+                "false": 1
+            },
+            "SystemConfiguration.framework": {
+                "false": 1
+            }
+        },
+        "config.xml": {
+            "/*": {
+                "<feature name=\"TCPlugin\"><param name=\"ios-package\" value=\"TCPlugin\" /></feature>": 1
+            }
+        },
+        "*-Info.plist": {
+            "UIBackgroundModes": {
+                "<array><string>voip</string><string>audio</string></array>": 1
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.twilioclient": {
+            "PACKAGE_NAME": "com.myfamilyvoice.mobile"
+        },
+        "org.jshybugger.cordova": {
+            "PACKAGE_NAME": "com.myfamilyvoice.mobile"
+        }
+    },
+    "dependent_plugins": {}
+}

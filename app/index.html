@@ -1,0 +1,66 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link href="styles/magic-bootstrap.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
+    <!-- endbuild -->
+    <!--script type="text/javascript" src="//static.twilio.com/libs/twiliojs/1.1/twilio.min.js"></script-->    
+  </head>
+  <body ng-app="mfvApp" ng-cloak>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <ng-include src="'scripts/navbar/navbar.html'">
+    </ng-include>
+    
+               
+ 
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p>@ Copyright. All Rights Reserved. <a href="http://www.myfamilyvoice.com">MyFamilyVoice.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--[if lt IE 9]>
+        <script src="bower_components/es5-shim/es5-shim.js"></script>
+        <script src="bower_components/json3/lib/json3.min.js"></script>
+        <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/vendor/modernizr.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/directives/resizeable.js"></script>
+    <script src="scripts/navbar/NavBarCtrl.js"></script>
+    <script src="scripts/record/RecordCtrl.js"></script>
+    <script src="scripts/vendor/parse-1.2.15.js"></script>
+    <script src="cordova.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

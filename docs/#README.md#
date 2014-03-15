@@ -1,0 +1,22 @@
+#Phonegap
+*  Follow instructions here: https://github.com/dsimard/grunt-angular-phonegap
+*  Edit the www/confix.xml 
+*     change the id, name and description from Hello World
+*     add <access origin="https://*.parse.com"/> 
+*  Install plugin here: phonegap local plugin add https://github.com/ayajshaikh/twilio_client_phonegap.git
+*  Copy project files
+*    Grunt.js, app, package.json, bower.json
+*  Setup Twilio
+*    Copy *.h to platforms/ios/MyFamilyVoice/Plugins/com.phonegap.plugins.twilioclient
+*  Build iOS: grunt buildiOS
+*  Setup XCode
+*    Target->MyFamilyVoice->General Team: Barton Hammond
+*    Linked Frameworks and Libraries => Include *.a from Twilio
+*    Build Settings -> Architectures -> Valid Architectures: armv7
+*                                    -> Build Active Architecture only: No
+*  Build XCode and deploy to device
+
+###########################################################################
+#NOTE: android/AndroidManifest.xml has debuggable=true - remove before prod
+###########################################################################
+
